@@ -1,0 +1,75 @@
+.btn {
+    background-color:#333333;
+    border-color:#333333;
+    color:white;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    background-color:black;
+    border-color:black;
+    color:white;
+}
+
+.form-control:focus {
+    border-color: orangered;
+}
+
+
+
+
+.usersBox, .chatBox {
+    min-height:35em;
+    padding:0;
+}
+
+.user-panel, .chat-panel {
+    height:35em;
+}
+
+.container {
+    margin-top:20px;
+}
+
+.chat-panel-body {
+    height:100%;
+}
+
+.chat-messages {
+    height:75%;
+    word-wrap: break-word;
+    padding-left: 12px;
+    padding-right:12px;
+    overflow-y:auto;
+    padding-bottom: 20px;
+}
+
+.chat-input {
+    height:25%;
+}
+
+textarea {
+    border-color:navajowhite !important;
+    outline: none;
+    box-shadow:none !important;
+}
+
+
+body {
+    background-color: #34495E;
+}
+
+.chat-page {
+    display:none;
+}
+
+p.nick-error {
+    color:white;
+}
+
+.log {
+    color: cornflowerblue;
+}
+
+.error {
+    color:darkred;
+}

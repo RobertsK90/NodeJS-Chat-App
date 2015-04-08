@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Chat App</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+           <div class="col-md-4 col-md-offset-4">
+               <p class="nick-error"></p>
+           </div>
+       </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <form class="nickname-form" action="chat.html">
+                <div class="input-group">
+                     <input type="text" class="form-control nickname" placeholder="Enter Nickname" />
+                     <span class="input-group-btn">
+                         <button class="btn" type="submit">Start Chat</button>
+                     </span>
+                </div>
+                </form>
+            </div>
+        </div>
+
+       <div class="row chat-page">
+           <div class="col-xs-8 col-xs-offset-2">
+               <div class="col-xs-6 col-xs-offset-2 chatBox">
+                   <div class="panel panel-warning chat-panel">
+                       <div class="panel-body chat-panel-body">
+                           <div class="row chat-messages">
+
+                           </div>
+                           <div class="row chat-input">
+                               <form class="message-form">
+                                   <div class="form-group">
+                                       <textarea name="message" class="form-control message-input" cols="30" rows="5" placeholder="Enter Your Message and Hit Enter"></textarea>
+                                   </div>
+                               </form>
+                           </div>
+
+                       </div>
+                   </div>
+               </div>
+               <div class="col-xs-2 usersBox">
+                   <div class="panel panel-warning user-panel">
+                       <div class="panel-heading">
+                           <h3 class="panel-title">Active Users</h3>
+                       </div>
+                       <div class="panel-body users-list">
+                           User List
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/assets/js/script.js"></script>
+
+</body>
+
+</html>
