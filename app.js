@@ -1,7 +1,3 @@
-/**
- * Created by Roberts on 1/4/15.
- */
-
 var express  = require('express');
 var app      = express();
 var port     = process.env.PORT || 8080;
